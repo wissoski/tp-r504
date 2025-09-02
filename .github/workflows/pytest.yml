@@ -1,0 +1,17 @@
+name: tests unitaires
+on: [push]
+jobs:
+  test1:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+    - name: Set up Python for Demo
+      uses: actions/setup-python@v3
+
+python@v4
+      with:
+        python-version: '3.x'
+    - name: Install pytest
+      run: pip install pytest
+    - name: Run tests
+      run: pytest tp1/test.py
