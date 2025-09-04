@@ -3,7 +3,7 @@ def puissance(a, b):
         raise TypeError("Only integers are allowed")
     if a == 0 and b < 0:
         raise Exception("0 à une puissance négative est indéfini")
-    if b = 0:
+    if b == 0:
         raise Exception("Exposant négatif interdit")
     if b == 0:
         return 1
