@@ -6,7 +6,6 @@ def test1():
     assert f.puissance(2,2) == 4
 
 def test_exception():
-   import pytest
    with pytest.raises(Exception):
        f.puissance(0, -1)
 
