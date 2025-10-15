@@ -1,7 +1,8 @@
 import java.io.*;
 import java.net.*;
 
-public class ServeurUDP {
+public class serveurUDP
+{
 	public static void main(String[] args) throws  Exception
 	{
 		DatagramSocket sock = new DatagramSocket(8080);
@@ -15,11 +16,8 @@ public class ServeurUDP {
 			String str = new String(packet.getData() );
 			byte[] responseData = str.getBytes();
 			System.out.println( "str=" + str );
-
-
-
-			sock.send(sendPacket);
-			e.printStackTrace();
+//			sock.send(sendPacket);
+//			e.printStackTrace();
 		}
 	}
 }
